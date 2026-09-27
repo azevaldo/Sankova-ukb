@@ -363,163 +363,19 @@ node -v
 npm -v
 ```
 
+## ⚙️ Instalação
 
-# 📥 Instalação
+A instalação e configuração do projeto Laravel estão documentadas no README localizado dentro da pasta do projeto.
 
-## 1. Clonar o repositório
+Para consultar os requisitos, configuração do ambiente, banco de dados e comandos necessários para executar a aplicação, acesse:
 
-```bash
-git clone https://github.com/SEU_USUARIO/sankova-ukab.git
-```
-
-Entre na pasta:
-
-```bash
-cd sankova-ukab
-```
-
-
-## 2. Instalar as dependências do PHP
-
-Execute:
-
-```bash
-composer install
-```
-
-
-## 3. Instalar as dependências do frontend
-
-```bash
-npm install
-```
-
-
-## 4. Criar o arquivo `.env`
-
-Copie o arquivo de configuração:
-
-```bash
-cp .env.example .env
-```
-
-No Windows, caso o comando acima não funcione, você pode utilizar:
-
-```powershell
-copy .env.example .env
-```
-
-Depois configure no `.env` as informações do banco de dados utilizado pelo projeto.
-
-Exemplo:
-
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=ukbstore
-DB_USERNAME=root
-DB_PASSWORD=
-```
-
-
-5. Gerar a chave da aplicação
-
-```bash
-php artisan key:generate
-```
-
-
-
-6. Executar as migrations
-
-Depois de configurar o banco de dados:
-
-```bash
-php artisan migrate
-```
-
-As migrations irão criar as tabelas necessárias para o funcionamento da aplicação.
-
-
-7. Popular o banco de dados
-
-Execute os seeders:
-
-```bash
-php artisan db:seed
-```
-
-Os seeders são responsáveis por inserir os dados iniciais definidos pelo projeto.
-
-> Caso o projeto possua um `DatabaseSeeder` configurado para executar os demais seeders, o comando acima será suficiente.
-
-
-
-8. Compilar os recursos do frontend
-
-Execute:
-
-```bash
-npm run dev
-```
-
-Para desenvolvimento, mantenha esse comando em execução enquanto trabalha no projeto.
-
-
-
-9. Iniciar o servidor Laravel
-
-Em outro terminal:
-
-```bash
-php artisan serve
-```
-
-Por padrão, a aplicação ficará disponível em:
-
-```text
-http://127.0.0.1:8000
-```
-
-
- 🚀 Instalação resumida
-
-Depois de clonar o projeto, a sequência principal é:
-
-```bash
-git clone https://github.com/SEU_USUARIO/sankova-ukab.git
-
-cd sankova-ukab
-
-composer install
-
-npm install
-
-cp .env.example .env
-
-php artisan key:generate
-
-php artisan migrate
-
-php artisan db:seed
-
-npm run dev
-```
-
-Em outro terminal:
-
-```bash
-php artisan serve
-```
-
----
+👉 [README do projeto]
 
  🔄 Fluxo geral da plataforma
 
 O Sankova UKAB pode ser entendido a partir de dois grandes módulos:
 
-```text
+```
                          SANKOVA UKAB
                               │
              ┌────────────────┴────────────────┐
